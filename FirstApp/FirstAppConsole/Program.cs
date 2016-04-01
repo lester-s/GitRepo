@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FirstAppConsole
 {
-    class Program
+    internal class Program
     {
         private static int minValue;
         private static int maxValue;
@@ -14,9 +10,9 @@ namespace FirstAppConsole
         private static int valueToFind;
         private static int tryCounter;
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Random randomGenerator = new Random();
+            var randomGenerator = new Random();
             SetMinValue();
 
             SetMaxValue();
@@ -29,7 +25,7 @@ namespace FirstAppConsole
 
             var replay = AskForReplay();
 
-            if(replay)
+            if (replay)
             {
                 tryCounter = 0;
                 Main(args);
@@ -50,7 +46,7 @@ namespace FirstAppConsole
                 var isNo = string.Equals(replay, "N", StringComparison.OrdinalIgnoreCase);
                 isInputOk = isNo || isYes;
 
-                if(isInputOk)
+                if (isInputOk)
                 {
                     result = isYes ? isYes : false;
                 }
