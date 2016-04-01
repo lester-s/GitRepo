@@ -82,7 +82,7 @@ namespace FirstAppConsole
                 }
                 else
                 {
-                    message = $"C'est gagné ! il vous aura fallu {tryCounter + 1} coups \r\n";
+                    message = $"C'est gagné ! il vous aura fallu {tryCounter + 1} {(tryCounter > 1 ? "coups" : "coup")} \r\n";
                 }
                 tryCounter++;
                 Console.WriteLine(message);
