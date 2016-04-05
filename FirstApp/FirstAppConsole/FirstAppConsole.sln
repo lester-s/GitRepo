@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstAppConsole", "FirstApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessTheNumberBLL", "..\GuessTheNumberBLL\GuessTheNumberBLL\GuessTheNumberBLL.csproj", "{B866526F-5385-433E-9C22-F61291244F96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessTheNumberWPF", "..\GuessTheNumberWPF\GuessTheNumberWPF.csproj", "{7FBD99BC-4D73-4387-84ED-BA54F018678B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B866526F-5385-433E-9C22-F61291244F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B866526F-5385-433E-9C22-F61291244F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B866526F-5385-433E-9C22-F61291244F96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FBD99BC-4D73-4387-84ED-BA54F018678B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FBD99BC-4D73-4387-84ED-BA54F018678B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FBD99BC-4D73-4387-84ED-BA54F018678B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FBD99BC-4D73-4387-84ED-BA54F018678B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
