@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GuessTheNumberBLL
 {
@@ -10,10 +6,11 @@ namespace GuessTheNumberBLL
     {
         private int minValue;
         private int maxValue;
-        private Random randomGenerator = new Random();
+        private readonly Random randomGenerator = new Random();
 
         public int currentValue { get; set; }
         public int ValueToFind { get; private set; }
+
         public bool HasWin
         {
             get
@@ -22,17 +19,19 @@ namespace GuessTheNumberBLL
             }
         }
 
-        public int TryCounter{ get; set; }
+        public int TryCounter { get; set; }
 
         public event Action OnWin;
+
         public event Action OnToLow;
+
         public event Action OnToHigh;
 
         public bool AskForReplay()
         {
             throw new NotImplementedException();
         }
-        
+
         public bool SetMaxValue(string maxValueString)
         {
             return int.TryParse(maxValueString, out maxValue);

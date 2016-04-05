@@ -9,9 +9,8 @@ namespace FirstAppConsole
 
         private static void Main(string[] args)
         {
-            var randomGenerator = new Random();
-
             guessService = new GtnBLL();
+
             guessService.OnWin += GuessService_OnWin;
             guessService.OnToLow += GuessService_OnToLow;
             guessService.OnToHigh += GuessService_OnToHigh;
@@ -65,7 +64,7 @@ namespace FirstAppConsole
                 }
             }
 
-            if(result)
+            if (result)
             {
                 guessService.TryCounter = 0;
                 Main(null);
