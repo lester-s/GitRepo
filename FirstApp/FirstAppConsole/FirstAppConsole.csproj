@@ -50,6 +50,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GuessTheNumberBLL\GuessTheNumberBLL\GuessTheNumberBLL.csproj">
+      <Project>{b866526f-5385-433e-9c22-f61291244f96}</Project>
+      <Name>GuessTheNumberBLL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
